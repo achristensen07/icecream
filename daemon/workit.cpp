@@ -227,7 +227,7 @@ int work_it(CompileJob &j, unsigned int job_stat[], MsgChannel *client, CompileR
             argv[i++] = strdup("objective-c");
         } else if (j.language() == CompileJob::Lang_OBJCXX) {
             argv[i++] = strdup("objective-c++");
-        } else if (j.language() == CompileJob::LANG_C) {
+        } else if (j.language() == CompileJob::Lang_C) {
             argv[i++] = strdup("c");
         } else {
             error_client(client, "language not supported");
